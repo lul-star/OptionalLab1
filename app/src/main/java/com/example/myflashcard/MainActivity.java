@@ -59,10 +59,14 @@ public class MainActivity extends AppCompatActivity {
 
                 if(eyeSeen && choiceSeen) {
                     toggleChoice.setImageResource(R.drawable.cancelledeye);
+
                     flashcardChoice1.setVisibility(View.VISIBLE);
                     flashcardChoice2.setVisibility(View.VISIBLE);
                     flashcardChoice3.setVisibility(View.VISIBLE);
 
+                    flashcardChoice1.setBackgroundColor(getResources().getColor(R.color.blue));
+                    flashcardChoice2.setBackgroundColor(getResources().getColor(R.color.blue));
+                    flashcardChoice3.setBackgroundColor(getResources().getColor(R.color.blue));
                     eyeSeen = false;
                     choiceSeen = true;
                 }
